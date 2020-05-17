@@ -182,7 +182,7 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(num, pow) {
+function roundToPowerOfTen(/* num, pow */) {
   throw new Error('Not implemented');
 }
 
@@ -203,7 +203,7 @@ function roundToPowerOfTen(num, pow) {
  *   16 => false
  *   17 => true
  */
-function isPrime(n) {
+function isPrime(/* n */) {
   throw new Error('Not implemented');
 }
 
