@@ -53,11 +53,11 @@ function parseDataFromIso8601(value) {
  *    Date(2012,1,1)    => true
  *    Date(2015,1,1)    => false
  */
-function isLeapYear(date) {
+/*function isLeapYear(date) {
   const year = new Date(date).getFullYear();
   return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 }
-
+*/
 
 /**
  * Returns the string represention of the timespan between two dates.

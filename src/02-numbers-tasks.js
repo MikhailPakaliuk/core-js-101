@@ -70,10 +70,10 @@ function getAverage(value1, value2) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(x1, y1, x2, y2) {
+/*function getDistanceBetweenPoints(x1, y1, x2, y2) {
   return Math.sqrt(Math.pow(Math.abs(x1 - x2), 2) + Math.pow(Math.abs(y1 - y2), 2));
 }
-
+*/
 /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
  *
@@ -86,10 +86,10 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(a, b) {
+/*function getLinearEquationRoot(a, b) {
   return b * (-1) / a;
 }
-
+*/
 
 /**
  * Returns an angle (in radians) between two vectors given by xi and yi,
@@ -109,13 +109,13 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
-function getAngleBetweenVectors(x1, y1, x2, y2) {
+/*function getAngleBetweenVectors(x1, y1, x2, y2) {
   const ab = getDistanceBetweenPoints(0, 0, x2, y2);
   const bc = getDistanceBetweenPoints(0, 0, x1, y1);
   const ac = getDistanceBetweenPoints(x1, y1, x2, y2);
   return Math.acos(0.5 * (bc / ab + ab / bc - (ac * ac).toFixed(15) / (ab * bc)));
 }
-
+*/
 /**
  * Returns a last digit of a integer number.
  *
@@ -182,12 +182,12 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(num, pow) {
+/*function roundToPowerOfTen(num, pow) {
   const str = num.toString();
   const str1 = `${str}e-${str.length}`;// decided to test whether it is possible so
   return Math.pow(10, str.length) * Number(Number(str1).toFixed(str.length - pow));
 }
-
+*/
 /**
  * Returns true is the number is prime; otherwise false.
  * See: https://en.wikipedia.org/wiki/Primality_test
@@ -205,7 +205,7 @@ function roundToPowerOfTen(num, pow) {
  *   16 => false
  *   17 => true
  */
-function isPrime(n) {
+/*function isPrime(n) {
   if (n == 1) { // I don't know about others, but for me 1 is not a Prime number
     return false;
   }
@@ -214,7 +214,7 @@ function isPrime(n) {
   }
   return true;
 }
-
+*/
 /**
  * Tries to convert value to number and returns it if conversion was successfull;
  * otherwise returns default value passed as a second argument.

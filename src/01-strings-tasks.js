@@ -226,12 +226,12 @@ function getRectangleString(width, height) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(str) {
+/*function encodeToRot13(str) {
   function F(x) {
     return x + 13 > 122 ? x - 13 : x >= 97 ? x + 13 : x + 13 > 90 ? x - 13 : x >= 65 ? x + 13 : x;
   }
   return str.split('').map((i) => String.fromCharCode(F(i.charCodeAt()))).join('');
-}
+}*/
 
 /**
  * Returns true if the value is string; otherwise false.

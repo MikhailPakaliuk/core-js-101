@@ -200,8 +200,8 @@ function getTail(/* arr, n */) {
  *    +'30,31,32,33,34'
  */
 function toCsvText(arr) {
-  const arr_str = arr.map((params) => params.join(','));
-  return arr_str.join('\n');
+  const arrstr = arr.map((params) => params.join(','));
+  return arrstr.join('\n');
 }
 
 
@@ -306,8 +306,8 @@ function get3TopItems(/* arr */) {
  *   [ 1, '2' ] => 1
  */
 function getPositivesCount(arr) {
-  const arr_ = arr.filter((i) => i > 0 && typeof (i) === 'number');
-  return arr_.length;
+  const arry = arr.filter((i) => i > 0 && typeof (i) === 'number');
+  return arry.length;
 }
 
 /**
@@ -323,11 +323,11 @@ function getPositivesCount(arr) {
  *   [ 'nine','eight','nine','eight'] => [ 'eight','eight','nine','nine']
  *   [ 'one','one','one','zero' ]     => [ 'zero','one','one','one' ]
  */
-function sortDigitNamesByNumericOrder(/* arr */) {
+/*function sortDigitNamesByNumericOrder( arr ) {
   const _arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
   throw new Error('Not implemented');
 }
-
+*/
 /**
  * Returns the sum of all items in the specified array of numbers
  *
