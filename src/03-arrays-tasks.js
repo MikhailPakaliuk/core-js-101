@@ -323,11 +323,10 @@ function getPositivesCount(arr) {
  *   [ 'nine','eight','nine','eight'] => [ 'eight','eight','nine','nine']
  *   [ 'one','one','one','zero' ]     => [ 'zero','one','one','one' ]
  */
-/*function sortDigitNamesByNumericOrder( arr ) {
-  const _arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+function sortDigitNamesByNumericOrder(/* arr */) {
   throw new Error('Not implemented');
 }
-*/
+
 /**
  * Returns the sum of all items in the specified array of numbers
  *

@@ -53,11 +53,10 @@ function parseDataFromIso8601(value) {
  *    Date(2012,1,1)    => true
  *    Date(2015,1,1)    => false
  */
-/*function isLeapYear(date) {
-  const year = new Date(date).getFullYear();
-  return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+function isLeapYear(/* date */) {
+  throw new Error('Not implemented');
 }
-*/
+
 
 /**
  * Returns the string represention of the timespan between two dates.
@@ -93,31 +92,6 @@ function timeSpanToString(startDate, endDate) {
  *    Date.UTC(2016,3,5,21, 0) => Math.PI/2
  */
 function angleBetweenClockHands(/* date */) {
-  /* function modNOD(a, b) {
-        if (a == 0 || b == 0) {
-            return Math.max(a, b);
-        } else {
-            while (a != b) {
-                a > b ? a -= b : b -= a;
-            }
-            return a;
-        }
-    }
-    let nod_hour_hand = modNOD(new Date(date).getUTCHours(), 6);
-    let nod_minute_hand = modNOD(new Date(date).getUTCMinutes(), 30);
-    let minute_hand_date = ((new Date(date).getUTCMinutes()/nod_minute_hand) * Math.PI.toFixed(15) / (30/nod_minute_hand));
-    let incremental_hour_hand_date = (Math.PI / 6).toFixed(16) * (new Date(date).getUTCMinutes() / 60);
-    let hour_hand_date = incremental_hour_hand_date + (function (params) {
-        while (params > Math.PI) {
-            params -= Math.PI;
-        }
-        return params;
-    })((new Date(date).getUTCHours() / nod_hour_hand) * Math.PI / (6 / nod_hour_hand));
-    /*const noon = 12 * 60;
-    if( minutes_date>=noon) minutes_date-=noon:
-    if(minutes_date>noon/2) minutes_date=noon-minutes_date;
-    } */
-  /* return Math.abs(hour_hand_date - minute_hand_date); */
   throw new Error('Not implemented');
 }
 
